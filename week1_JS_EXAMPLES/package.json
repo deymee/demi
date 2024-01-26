@@ -1,0 +1,11 @@
+{
+  "name": "week1_js_examples",
+  "version": "1.0.0",
+  "description": "First Javascript Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deymee",
+  "license": "ISC"
+}
