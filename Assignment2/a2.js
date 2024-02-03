@@ -7,8 +7,6 @@
 *  Name:Oluwademilade Jeleel Salami Student ID:125970228 Date:02-03-2024
 *
 ********************************************************************************/ 
-
-
 const collegeData = require('./modules/collegeData');
 
 async function run() {
