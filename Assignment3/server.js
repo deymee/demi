@@ -11,6 +11,7 @@
 var HTTP_PORT = process.env.PORT || 8080;
 var express = require("express");
 var app = express();
+app.use(express.static('public'));
 var path = require("path");
 // Require the collegeData module from the modules folder
 var collegeData = require("./modules/collegeData.js");
