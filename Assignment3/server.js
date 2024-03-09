@@ -16,6 +16,10 @@ var path = require("path");
 // Require the collegeData module from the modules folder
 var collegeData = require("./modules/collegeData.js");
 
+// Add express.urlencoded middleware for parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
+
 // Call the initialize function before setting up the routes
 collegeData.initialize().then(() => {
     console.log("Data initialized. Setting up the routes.");
@@ -61,6 +65,10 @@ collegeData.initialize().then(() => {
             .then((student) => res.json(student))
             .catch(() => res.json({message: "no results"}));
     });
+    // Route for GET /students/add
+    app.get("/students/add", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'addStudent.html'));
+    });
 
 
     // Route for GET /about
@@ -71,6 +79,18 @@ collegeData.initialize().then(() => {
     // Route for GET /htmlDemo
     app.get("/htmlDemo", (req, res) => {
         res.sendFile(path.join(__dirname, 'views', 'htmlDemo.html'));
+    });
+    // Route for POST /students/add
+    app.post("/students/add", (req, res) => {
+        collegeData.addStudent(req.body)
+            .then(() => {
+                res.redirect("/students");
+             })
+            .catch(err => {
+            // Handle errors appropriately
+            console.log(err);
+            res.status(500).send("Unable to save student data");
+        });
     });
 
     // Catch-all route for handling unmatched routes
