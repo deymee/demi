@@ -1,45 +1,44 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* General Body Styling */
 body, html {
     height: 100%;
     margin: 0;
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Soft blue gradient */
-    font-family: 'Nunito', sans-serif; /* Apply Google Font Nunito */
+    background: linear-gradient(to right, #ffecd2, #fcb69f); /* Bright peach gradient */
+    font-family: 'Poppins', sans-serif; /* Apply Google Font Poppins */
     overflow: auto;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #343a40; /* Dark gray background */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), /* Outer shadow */
-                0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Inner shadow */
+    background-color: #ff6b6b; /* Bright red background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
 }
 
 .navbar-brand {
-    color: #ffffff; /* White text for brand */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for brand */
+    color: #ffe66d; /* Lemon yellow color for brand */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
 }
 
 .nav-link {
-    color: #cccccc; /* Light gray for links */
+    color: #fff; /* White for links */
 }
 
 .nav-link:hover {
-    color: #ffffff; /* White on hover */
+    color: #ffe66d; /* Lemon yellow color on hover */
 }
 
 /* Primary Button Styling */
 .btn-primary {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: #ffffff; /* White text */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow */
+    background-color: #1b9aaa; /* Bright turquoise color */
+    color: #fff; /* White text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Soft box shadow */
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Darkened blue on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    background-color: #137a7f; /* Darker turquoise on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
 /* Table Styling */
@@ -49,36 +48,36 @@ table {
 }
 
 table tr:nth-child(odd) td {
-    background-color: #f2f2f2; /* Light grey for odd rows */
+    background-color: #fff0f0; /* Soft pink for odd rows */
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd; /* Light border for separation */
+    border-bottom: 2px solid #ffafcc; /* Bright pink for separation */
 }
 
 /* Heading Elements */
 h1, h2, h3, h4, h5, h6 {
-    color: #343a40; /* Dark grey color for headings */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for headings */
+    color: #ff6b6b; /* Bright red color for headings */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Text shadow for depth */
 }
 
 /* Link Styling */
 a {
-    color: #007bff; /* Bootstrap primary color for links */
+    color: #1b9aaa; /* Bright turquoise color for links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3; /* Darkened blue on hover */
-    text-decoration: none; /* No underline on hover */
+    color: #137a7f; /* Darker turquoise on hover */
+    text-decoration: underline; /* Underline on hover for clarity */
 }
 
 /* Fieldset Legends */
 legend {
-    padding-top: 20px; /* Spacing at the top */
-    padding-bottom: 20px; /* Spacing at the bottom */
-    color: #343a40;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    color: #ff6b6b; /* Bright red color for text */
+    font-weight: 600; /* Bold font weight for emphasis */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
